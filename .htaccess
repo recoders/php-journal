@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# Preview generator
+RewriteRule ([0-9]{1,})\/preview\.jpg$ ./generatepreview.php?id=$1 [L,QSA]
+# Medium pages
+RewriteRule ([0-9]{1,})\/medium/([0-9]{1,}).jpg$ ./generateimage.php?issue=$1&page=$2&size=m [L,QSA]
+# Small pages
+RewriteRule ([0-9]{1,})\/small/([0-9]{1,})\.jpg$ ./generateimage.php?issue=$1&page=$2&size=s [L,QSA]
+# Issue page
+RewriteRule ^issue([0-9]{1,}) ./issue.php?id=$1 [L,QSA]
+</IfModule>
