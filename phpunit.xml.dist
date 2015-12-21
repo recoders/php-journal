@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phpunit bootstrap="./tests/bootstrap.php"
+		colors="true"
+		convertErrorsToExceptions="true"
+		convertNoticesToExceptions="true"
+		convertWarningsToExceptions="true"
+		stopOnFailure="false">
+		<testsuites>
+			<testsuite name="PHP Magazine Test Suite">
+				<directory>./tests</directory>
+			</testsuite>
+		</testsuites>
+		<filter>
+			<blacklist>
+				<file>index.php</file>
+				<file>issue.php</file>
+				<file>generateimage.php</file>
+				<file>generatepreview.php</file>
+			</blacklist>
+		</filter>
+</phpunit>
