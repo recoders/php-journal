@@ -1,5 +1,6 @@
-PHP Magazine
-=
+# PHP Magazine
+
+[![Build Status](https://travis-ci.org/recoders/php-magazine.svg?branch=heroku)](https://travis-ci.org/recoders/php-magazine)
 
 Simple online magazine realization made with jQuery-based Turn.js and few PHP scripts.
 
