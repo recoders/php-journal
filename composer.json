@@ -1,0 +1,14 @@
+{
+    "name": "recoders/php-magazine",
+    "description": "Simple online magazine realization made with jQuery-based Turn.js and few PHP scripts.",
+    "require": {
+        "php": "^5.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jfkz",
+            "email": "jfkz@jfkz.ru"
+        }
+    ]
+}
